@@ -10,5 +10,7 @@ namespace DatingApp.API.Data
 
         //telling our data context class about our entities 
         public DbSet<Value> Values { get; set; }
+        public DbSet<User> Users { get; set; }
+
     }
 }
