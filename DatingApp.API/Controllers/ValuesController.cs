@@ -22,6 +22,7 @@ namespace DatingApp.API.Controllers
 
         }
         // GET api/values
+        [AllowAnonymous] 
         [HttpGet] //IActionResults return the value and http response to the client
         public async Task<IActionResult> GetValues()
         {
@@ -32,6 +33,7 @@ namespace DatingApp.API.Controllers
         }
 
         // GET api/values/5
+        [AllowAnonymous] 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(int id)
         {   //this searches for a specific value, 
